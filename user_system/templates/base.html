@@ -1,0 +1,18 @@
+{% load static %}  <!-- Add this line to load the static files tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health App</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+        <p>Made by <a href="https://www.linkedin.com/in/yourname" target="_blank">Your Name</a> | <a href="https://github.com/yourgithub" target="_blank">GitHub</a></p>
+    </div>
+</body>
+</html>
